@@ -3,7 +3,7 @@
 
 <head>
 
-  <title>{{ site.name }}</title>
+  <title>Devan Shah</title>
   
       <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-234PYVSKQ8"></script>
@@ -18,7 +18,7 @@
 
   <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
 
-  <meta name="author" content="{{ site.name }}" />
+  <meta name="author" content="Devan Shah" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
@@ -31,7 +31,7 @@
 
   <script>
     function showEmail() {
-      document.getElementById('emailHolder').innerHTML = 'ude.notecnirp@divad.nay'.split("").reverse().join("")
+      document.getElementById('emailHolder').innerHTML = 'ude.notecnirp@hahs.naved'.split("").reverse().join("")
     }
   </script>
 
@@ -44,17 +44,17 @@
               <h1>
                 Devan Shah
               </h1>
-              <p>I am a third year undergraduate in Computer Science at Princeton University pursuing a minor in mathematics. I am currently a member of the <a href="https://www.minregret.com/"> Hazan Lab </a> led by <a href="https://www.ehazan.com/"> Elad Hazan </a>. 
+              <p>I am a third year undergraduate in Computer Science at Princeton University pursuing a minor in mathematics. I am currently a member of the <a href="https://www.minregret.com/"> Hazan Lab </a> led by <a href="https://www.ehazan.com/"> Prof. Elad Hazan </a>. 
               </p>
-              <p>Broadly, I study post-transformer architectures, such as <a href = "https://sites.google.com/view/gbrainprinceton/projects/spectral-transformers"> state space models </a>, and applications of machine learning to understanding thought and behavioral patterns. I currently work on understanding relaxations of state space models (i.e. the spectral transform unit). At Princeton, I cohost a reading group in natural language proccessing and chair our ACM chapter, with a general hope of increasing campus exposure to interesting research. 
+              <p>Broadly, I am interested in post-transformer architectures, such as <a href = "https://sites.google.com/view/gbrainprinceton/projects/spectral-transformers"> state space models</a>, and applications of machine learning to understanding thought and behavioral patterns. I currently work on understanding relaxations of state space models (i.e. the spectral transform unit). At Princeton, I cohost a reading group in natural language processing and chair our ACM chapter, with a general hope of increasing accessibility to research. 
               </p>
 
               <p style="text-align:center">
                 <a href='#' onclick='showEmail()' id='emailHolder'> Email </a> &nbsp;/&nbsp;
-                <a href="https://github.com/David-Yan1">GitHub</a> &nbsp;/&nbsp;
-                <a href="https://scholar.google.com/citations?user=HATHSOEAAAAJ&hl=en&oi=sra">Google Scholar</a> &nbsp;/&nbsp; 
-                <a href="pdfs/David_Yan_CV.pdf"> CV </a> &nbsp;/&nbsp; 
-                <a href="https://www.linkedin.com/in/david-yan-726033215/"> LinkedIn </a> <!-- &nbsp;/&nbsp; -->
+                <a href="https://github.com/dshah02">GitHub</a> &nbsp;/&nbsp;
+                <a href="https://scholar.google.com/citations?user=HaH7kOEhITwC&hl=en&oi=ao">Google Scholar</a> &nbsp;/&nbsp; 
+                <a href="pdfs/Devan_Shah_CV.pdf"> CV </a> &nbsp;/&nbsp; 
+                <a href="https://www.linkedin.com/in/devan-j-shah"> LinkedIn </a> <!-- &nbsp;/&nbsp; -->
               </p>
             </td>
             <td style="padding:2.5%;width:40%;max-width:40%">
@@ -63,6 +63,77 @@
             </td>
           </tr>
         </table>
+
+        <!--INTERNSHIP POSTS-->
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          <tr>
+            <td style="padding:2.5%;width:100%;vertical-align:middle">
+              <h2>Work Experience</h2>
+            </td>
+          </tr>
+        </table>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+
+          {% for post in site.posts %}
+          {% for cat in post.categories %}
+          {% if cat == 'work' %}
+          <tr>
+            <td style="padding:2.5%;width:20%;vertical-align:middle;min-width:120px">
+              <div style="text-align:center;">
+                <img src="{{post.image}}" alt="project image" style="width:50%; height:auto;" />
+            </div>
+            
+            </td>
+            <td style="padding:2.5%;width:75%;vertical-align:middle">
+              <a href="{{post.website}}"> <h3>{{post.title}}</h3> </a>
+
+              <!-- {% if post.website %}
+              <a href="{{post.website}}">website</a> /
+              {% endif %} -->
+              <br>
+              {%if post.period %}
+              <h3> {{ post.period }}</h3>
+              {% endif %}
+              {% if post.paper %}
+              <a href="{{post.paper}}">paper</a> /
+              {% endif %}
+              {% if post.patent %}
+              <a href="{{post.patent}}">patent</a> /
+              {% endif %}
+              {% if post.patent2 %}
+              <a href="{{post.patent2}}">patent #2</a> /
+              {% endif %}
+              {% if post.patent3 %}
+              <a href="{{post.patent3}}">patent #3</a> /
+              {% endif %}
+              {% if post.video %}
+              <a href="{{post.video}}">video</a> /
+              {% endif %}
+              {% if post.video2 %}
+              <a href="{{post.video2}}">video #2</a> /
+              {% endif %}
+              {% if post.code %}
+              <a href="{{post.code}}">code</a> /
+              {% endif %}
+              {% if post.poster %}
+              <a href="{{post.poster}}">poster</a> /
+              {% endif %}
+              {% if post.slides %}
+              <a href="{{post.slides}}">slides</a> /
+              {% endif %}
+              <p></p>
+              {{ post.excerpt }}
+            </td>
+          </tr>
+          {% endif %}
+          {% endfor %}
+          {% endfor %}
+        </table>
+        <br>
+        <br>
+        <br>
 
         <!-- RESEARCH POSTS-->
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
@@ -96,7 +167,7 @@
               <a href="{{post.website}}">website</a> /
               {% endif %}
               {% if post.paper %}
-              <a href="{{post.paper}}">paper</a> /
+              <a href="{{post.paper}}">paper</a> 
               {% endif %}
               {% if post.video %}
               <a href="{{post.video}}">video</a> /
@@ -122,6 +193,7 @@
         <br>
         <br>
 
+        
         <!-- COURSEWORK POSTS-->
        <!--  <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tr>
@@ -210,32 +282,20 @@
                   <td style="padding-left:2.5%;width:90%;vertical-align:middle"> Algorithms and Data Structures </td>
                 </tr>
                 <tr>
-                  <td style="padding-left:2.5%;width:10%;vertical-align:middle"> COS324 </td>
-                  <td style="padding-left:2.5%;width:90%;vertical-align:middle"> Introduction to Machine Learning </td>
-                </tr>
-                <tr>
-                  <td style="padding-left:2.5%;width:10%;vertical-align:middle"> COS316 </td>
-                  <td style="padding-left:2.5%;width:90%;vertical-align:middle"> Principles of Computer System Design </td>
-                </tr>
-                <tr>
-                  <td style="padding-left:2.5%;width:10%;vertical-align:middle"> COS326<sup>*</sup> </td>
-                  <td style="padding-left:2.5%;width:90%;vertical-align:middle"> Functional Programming </td>
-                </tr>
-                <tr>
                   <td style="padding-left:2.5%;width:10%;vertical-align:middle"> COS418 </td>
                   <td style="padding-left:2.5%;width:90%;vertical-align:middle"> Distributed Systems </td>
                 </tr>
                 <tr>
-                  <td style="padding-left:2.5%;width:10%;vertical-align:middle"> COS429 </td>
-                  <td style="padding-left:2.5%;width:90%;vertical-align:middle"> Computer Vision </td>
+                  <td style="padding-left:2.5%;width:10%;vertical-align:middle"> ECE435<sup>*</sup>  </td>
+                  <td style="padding-left:2.5%;width:90%;vertical-align:middle"> Machine Learning and Pattern Recognition </td>
                 </tr>
                 <tr>
-                  <td style="padding-left:2.5%;width:10%;vertical-align:middle"> COS598 </td>
+                  <td style="padding-left:2.5%;width:10%;vertical-align:middle"> COS597</td>
+                  <td style="padding-left:2.5%;width:90%;vertical-align:middle"> Long Term Memory in AI - Vector Search and Databases </td>
+                </tr>
+                <tr>
+                  <td style="padding-left:2.5%;width:10%;vertical-align:middle"> COS597 </td>
                   <td style="padding-left:2.5%;width:90%;vertical-align:middle"> Systems and Machine Learning </td>
-                </tr>
-                <tr>
-                  <td style="padding-left:2.5%;width:10%;vertical-align:middle"> COS597<sup>*</sup> </td>
-                  <td style="padding-left:2.5%;width:90%;vertical-align:middle"> Imaging the Invisible (Computational Imaging) </td>
                 </tr>
               </table>
             </td>
@@ -249,28 +309,48 @@
             <td>
               <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
                 <tr>
-                  <td style="padding-left:2.5%;width:10%;vertical-align:middle"> MAT201 </td>
-                  <td style="padding-left:2.5%;width:90%;vertical-align:middle"> Multivariable Calculus </td>
+                  <td style="padding-left:2.5%;width:10%;vertical-align:middle"> MAT216 </td>
+                  <td style="padding-left:2.5%;width:90%;vertical-align:middle"> Multivariable Analysis and Linear Algebra</td>
                 </tr>
                 <tr>
-                  <td style="padding-left:2.5%;width:10%;vertical-align:middle"> MAT204 </td>
-                  <td style="padding-left:2.5%;width:90%;vertical-align:middle"> Advanced Linear Algebra with Applications </td>
+                  <td style="padding-left:2.5%;width:10%;vertical-align:middle"> ECO310 </td>
+                  <td style="padding-left:2.5%;width:90%;vertical-align:middle"> Microeconomic Theory: A Mathematical Approach</td>
                 </tr>
                 <tr>
-                  <td style="padding-left:2.5%;width:10%;vertical-align:middle"> COS240 </td>
-                  <td style="padding-left:2.5%;width:90%;vertical-align:middle"> Reasoning About Computation (Discrete Math) </td>
+                  <td style="padding-left:2.5%;width:10%;vertical-align:middle"> MAT377 </td>
+                  <td style="padding-left:2.5%;width:90%;vertical-align:middle"> Combinatorial Mathematics </td>
                 </tr>
                 <tr>
-                  <td style="padding-left:2.5%;width:10%;vertical-align:middle"> ORF309 </td>
-                  <td style="padding-left:2.5%;width:90%;vertical-align:middle"> Probability and Stochastic Systems </td>
+                  <td style="padding-left:2.5%;width:10%;vertical-align:middle"> MAT385<sup>*</sup> </td>
+                  <td style="padding-left:2.5%;width:90%;vertical-align:middle"> Probability Theory </td>
                 </tr>
                 <tr>
-                  <td style="padding-left:2.5%;width:10%;vertical-align:middle"> COS445 </td>
-                  <td style="padding-left:2.5%;width:90%;vertical-align:middle"> Economics and Computing (Voting and Auction Theory) </td>
-                </tr>
-                <tr>
-                  <td style="padding-left:2.5%;width:10%;vertical-align:middle"> COS511<sup>*</sup> </td>
+                  <td style="padding-left:2.5%;width:10%;vertical-align:middle"> ECE434 </td>
                   <td style="padding-left:2.5%;width:90%;vertical-align:middle"> Theoretical Machine Learning </td>
+                </tr>
+                <tr>
+                  <td style="padding-left:2.5%;width:10%;vertical-align:middle"> MAT478 </td>
+                  <td style="padding-left:2.5%;width:90%;vertical-align:middle"> The Probabilistic Method </td>
+                </tr>
+                <tr>
+                  <td style="padding-left:2.5%;width:10%;vertical-align:middle"> COS521 </td>
+                  <td style="padding-left:2.5%;width:90%;vertical-align:middle"> Advanced Algorithm Design </td>
+                </tr>
+                <tr>
+                  <td style="padding-left:2.5%;width:10%;vertical-align:middle"> COS522 </td>
+                  <td style="padding-left:2.5%;width:90%;vertical-align:middle"> Computational Complexity </td>
+                </tr>
+                <tr>
+                  <td style="padding-left:2.5%;width:10%;vertical-align:middle"> ORF543<sup>*</sup>  </td>
+                  <td style="padding-left:2.5%;width:90%;vertical-align:middle"> Deep Learning Theory </td>
+                </tr>
+                <tr>
+                  <td style="padding-left:2.5%;width:10%;vertical-align:middle"> COS585 </td>
+                  <td style="padding-left:2.5%;width:90%;vertical-align:middle"> Information Theory and Applications </td>
+                </tr>
+                <tr>
+                  <td style="padding-left:2.5%;width:10%;vertical-align:middle"> COS598<sup>*</sup>   </td>
+                  <td style="padding-left:2.5%;width:90%;vertical-align:middle"> Theory of Natural Algorithms </td>
                 </tr>
               </table>
             </td>
@@ -285,26 +365,21 @@
             <td>
               <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
                 <tr>
-                  <td style="padding-left:2.5%;width:10%;vertical-align:middle"> FRS133 </td>
-                  <td style="padding-left:2.5%;width:90%;vertical-align:middle"> Knowing Minds (Philosophy of Mind) </td>
+                  <td style="padding-left:2.5%;width:10%;vertical-align:middle"> FRS116 </td>
+                  <td style="padding-left:2.5%;width:90%;vertical-align:middle"> Evolution of Human Language </td>
                 </tr>
                 <tr>
-                  <td style="padding-left:2.5%;width:10%;vertical-align:middle"> POL210 </td>
-                  <td style="padding-left:2.5%;width:90%;vertical-align:middle"> Political Theory </td>
+                  <td style="padding-left:2.5%;width:10%;vertical-align:middle"> CWR202 </td>
+                  <td style="padding-left:2.5%;width:90%;vertical-align:middle"> Creative Writing (Poetry) </td>
                 </tr>
                 <tr>
-                  <td style="padding-left:2.5%;width:10%;vertical-align:middle"> PHI383 </td>
-                  <td style="padding-left:2.5%;width:90%;vertical-align:middle"> Freedom and Responsibility </td>
+                  <td style="padding-left:2.5%;width:10%;vertical-align:middle"> ATL494 </td>
+                  <td style="padding-left:2.5%;width:90%;vertical-align:middle"> Creating Comedy for Television </td>
                 </tr>
                 <tr>
-                  <td style="padding-left:2.5%;width:10%;vertical-align:middle"> POL388 </td>
-                  <td style="padding-left:2.5%;width:90%;vertical-align:middle"> Causes of War </td>
+                  <td style="padding-left:2.5%;width:10%;vertical-align:middle"> ATL497 </td>
+                  <td style="padding-left:2.5%;width:90%;vertical-align:middle"> How to Write a Monologue </td>
                 </tr>
-                <tr>
-                  <td style="padding-left:2.5%;width:10%;vertical-align:middle"> PHI305<sup>*</sup> </td>
-                  <td style="padding-left:2.5%;width:90%;vertical-align:middle"> Consciousness and the Mind-Body Problem </td>
-                </tr>
-
               </table>
             </td>
           </tr>
@@ -324,7 +399,7 @@
       <td style="padding:0px">
         <br>
         <p style="text-align:center;font-size:small;">
-          Design and source code from <a href = "https://david-yan1.github.io"> David Yan's fork of <a href="https://araistrick.github.io">Alexander Raistrick's</a> fork of <a href="https://leonidk.com/">Leonid Keselman's</a> <a href="https://github.com/leonidk/new_website">Jekyll fork</a> of <a style="font-size:small;" href="https://jonbarron.info">Jon Barron's website</a>
+          Design and source code from <a href = "https://david-yan1.github.io"> David Yan's fork </a> of <a href="https://araistrick.github.io">Alexander Raistrick's</a> fork of <a href="https://leonidk.com/">Leonid Keselman's</a> <a href="https://github.com/leonidk/new_website">Jekyll fork</a> of <a style="font-size:small;" href="https://jonbarron.info">Jon Barron's website</a>
         </p>
       </td>
     </tr>
