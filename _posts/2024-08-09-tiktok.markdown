@@ -5,7 +5,7 @@ image: /images/tiktok_logo.png
 website: https://www.tiktok.com
 categories: work  
 period: May 2024 — August 2024
-excerpt: I improved the recommendation system for ecommerce videos for <b> a projected $33,000,000+ increase in annual sales </b>. I primarily focused on improving multi-interest modeling, training novel generative models (10B+ parameters) to better parameterize the interest space. 
+excerpt: I improved the recommendation system for ecommerce videos for <b> a projected $33,000,000+ increase in annual sales </b>. I primarily focused on improving multi-interest modeling, training novel generative models (10B+ parameters) to better represent the interest space. 
 
 ---
 
