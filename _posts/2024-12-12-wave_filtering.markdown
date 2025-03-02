@@ -6,5 +6,5 @@ image: /images/wave_filtering.png
 categories: investigations    
 authors: "<b> Devan Shah* </b>, Brandon Cho* (Equal Contribution)"
 paper: /pdfs/wave_filtering.pdf
-venue: COS 597
+venue: State Space Models
 ---

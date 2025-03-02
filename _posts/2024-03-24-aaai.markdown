@@ -3,7 +3,7 @@ layout: post
 title:  "Rider Posture-Based Continuous Authentication with Few-Shot Learning for Mobility Scooters (Student Abstract)"
 date:   2024-03-24 3:24:59 +00:00
 image: /images/aaai.png
-categories: research    
+categories: investigations    
 authors: "<b> Devan Shah </b>, Ruoqi Huang, Tingting Chen, Murtuza Jadliwala"
 paper: https://ojs.aaai.org/index.php/AAAI/article/view/30509
 venue: AAAI 2023

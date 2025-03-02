@@ -6,14 +6,13 @@
   <title>Devan Shah</title>
   
       <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-234PYVSKQ8"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-234PYVSKQ8');
-  </script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-W58CG6NR');</script>
+  <!-- End Google Tag Manager -->
   <meta name="google-site-verification" content="1vbJNPeCYEZrXY6NfDNiTF4Z8xTLUTbp69jtWa4LNuU" />
 
   <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
@@ -28,7 +27,10 @@
 </head>
 
 <body>
-
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W58CG6NR"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
   <script>
     function showEmail() {
       document.getElementById('emailHolder').innerHTML = 'ude.notecnirp@hahs.naved'.split("").reverse().join("")
@@ -59,7 +61,7 @@
             </td>
             <td style="padding:2.5%;width:40%;max-width:40%">
               <img style="width:100%;max-width:100%" alt="profile photo" src="images/profile_circle.png">
-              <p style="text-align:center"><a href="images/profile_square.jpg">Download Profile Picture (Square)</a></p>
+              <p style="text-align:center"><a href="images/profile_square.png">Download Profile Picture (Square)</a></p>
             </td>
           </tr>
         </table>
@@ -135,11 +137,12 @@
         <br>
         <br>
 
-        <!-- RESEARCH POSTS-->
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+       
+         <!-- RESEARCH POSTS-->
+         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tr>
             <td style="padding:2.5%;width:100%;vertical-align:middle">
-              <h2> Research</h2>
+              <h2>Projects </h2>
             </td>
           </tr>
         </table>
@@ -147,10 +150,10 @@
 
           {% for post in site.posts %}
           {% for cat in post.categories %}
-          {% if cat == 'research' %}
+          {% if cat == 'investigations' %}
           <tr>
             <td style="padding:2.5%;width:35%;vertical-align:middle;min-width:120px">
-              <img src="{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
+              <img src="{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:{{ post.image_size | default: 80 }}%;" />
             </td> 
             <td style="padding:2.5%;width:75%;vertical-align:middle">
               <h3>{{post.title}}</h3>
@@ -170,7 +173,7 @@
               <a href="{{post.paper}}">paper</a> 
               {% endif %}
               {% if post.video %}
-              <a href="{{post.video}}">video</a> /
+              / <a href="{{post.video}}">video</a>
               {% endif %}
               {% if post.code %}
               <a href="{{post.code}}">code</a> /
@@ -193,11 +196,11 @@
         <br>
         <br>
 
-         <!-- RESEARCH POSTS-->
-         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+        <!-- RESEARCH POSTS-->
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tr>
             <td style="padding:2.5%;width:100%;vertical-align:middle">
-              <h2>Projects </h2>
+              <h2>Surveys </h2>
             </td>
           </tr>
         </table>
@@ -205,10 +208,10 @@
 
           {% for post in site.posts %}
           {% for cat in post.categories %}
-          {% if cat == 'investigations' %}
+          {% if cat == 'surveys' %}
           <tr>
             <td style="padding:2.5%;width:35%;vertical-align:middle;min-width:120px">
-              <img src="{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
+              <img src="{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:{{ post.image_size | default: 80 }}%;" />
             </td> 
             <td style="padding:2.5%;width:75%;vertical-align:middle">
               <h3>{{post.title}}</h3>
@@ -487,4 +490,3 @@
 </body>
 
 </html>
-

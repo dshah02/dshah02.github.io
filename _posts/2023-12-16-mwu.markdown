@@ -3,8 +3,8 @@ layout: post
 title:  "Understanding Dynamic Algorithms for Packing-Covering LPs via Multiplicative Weight Updates"
 date:   2023-12-16 3:24:59 +00:00
 image: /images/mwu.png
-categories: investigations    
+categories: surveys    
 authors: "<b> Devan Shah* </b>, Owen Yang*, Sunil Vittal* (Equal Contribution)"
 paper: /pdfs/mwu.pdf
-venue: COS 521
+venue: Online Algorithms
 ---

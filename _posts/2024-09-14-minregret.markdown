@@ -1,0 +1,11 @@
+---
+layout: post
+title:  "SSM Research at the Hazan Lab"
+image: /images/deluca.svg
+website: https://sites.google.com/view/gbrainprinceton/projects/spectral-transformers
+categories: work  
+period: September 2024 — Present
+excerpt: I work on accelerating inference on the <a href="https://sites.google.com/view/gbrainprinceton/projects/spectral-transformers">Spectral Transformer</a>, a state space architecture for language modeling produced by Google DeepMind Princeton in collaboration with the Hazan Lab.
+
+---
+

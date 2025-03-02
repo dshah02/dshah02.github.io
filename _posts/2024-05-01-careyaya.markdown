@@ -5,7 +5,7 @@ image: /images/careyaya_logo.jpg
 categories: work  
 period: November 2023 — May 2024
 website: https://transform.careyaya.org/
-excerpt: As a research scientist at CareYaya Health Technologies, I studied the reconstruction of viewed images from brain activity, improving performance by conditioning on additional user  information. We aimed to better align EEG embeddings with CLIP space.
+excerpt: At CareYaya Health Technologies, I studied the reconstruction of viewed images from brain activity, improving performance by conditioning on additional user  information. We aimed to better align EEG embeddings with CLIP space.
 
 ---
 

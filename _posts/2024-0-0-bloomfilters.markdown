@@ -6,5 +6,5 @@ image: /images/bloom_filters.png
 categories: investigations    
 authors: "<b> Devan Shah* </b>, David Yan* (Equal Contribution)"
 paper: /pdfs/bloom_filters.pdf
-venue: COS 598
+venue: ML Augmented Systems
 ---
