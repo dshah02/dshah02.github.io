@@ -6,5 +6,5 @@ image: /images/aaai.png
 categories: investigations    
 authors: "<b> Devan Shah </b>, Ruoqi Huang, Tingting Chen, Murtuza Jadliwala"
 paper: https://ojs.aaai.org/index.php/AAAI/article/view/30509
-venue: AAAI 2023
+venue: AAAI 2024
 ---
