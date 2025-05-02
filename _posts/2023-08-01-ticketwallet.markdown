@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Price Prediction at Ticket Wallet"
+title:  "Price Prediction at Ticket Wallet (YC X25)"
 image: /images/ticketwallet_logo.svg
 categories: work  
 period: June 2023 — August 2023
