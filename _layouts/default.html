@@ -9,26 +9,25 @@
   <meta property="og:type" content="website">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-
   <title>Devan Shah – Machine Learning Researcher @ Princeton</title>
   
-      <!-- Google tag (gtag.js) -->
-<!-- Google Tag Manager -->
- <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-3TBD3KY986"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <!-- Google tag (gtag.js) -->
+  <!-- Google Tag Manager -->
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3TBD3KY986"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-  gtag('config', 'G-3TBD3KY986');
-</script>
+    gtag('config', 'G-3TBD3KY986');
+  </script>
 
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-W58CG6NR');</script>
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-W58CG6NR');</script>
   <!-- End Google Tag Manager -->
   <meta name="google-site-verification" content="1vbJNPeCYEZrXY6NfDNiTF4Z8xTLUTbp69jtWa4LNuU" />
 
@@ -40,6 +39,81 @@
   <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+  <style>
+    /* Responsive styles for small screens */
+    @media (max-width: 768px) {
+      /* Projects & Papers section */
+      .projects-container {
+        display: block !important;
+      }
+      
+      .projects-container > div {
+        width: 100% !important;
+        padding: 5px !important;
+      }
+      
+      /* Surveys section */
+      .surveys-container {
+        display: block !important;
+      }
+      
+      .surveys-container > div {
+        width: 100% !important;
+        padding: 5px !important;
+      }
+      
+      /* Coursework section */
+      .coursework-container {
+        display: block !important;
+      }
+      
+      .coursework-container > div {
+        width: 100% !important;
+        min-width: auto !important;
+        margin-bottom: 20px;
+      }
+      
+      /* Adjust table layouts for mobile */
+      table {
+        font-size: 14px;
+      }
+      
+      /* Make images more responsive */
+      img {
+        max-width: 100% !important;
+        height: auto !important;
+      }
+      
+      /* Adjust padding for mobile */
+      td {
+        padding: 1% !important;
+      }
+      
+      /* Stack project image and text vertically on very small screens */
+      @media (max-width: 480px) {
+        .projects-container table tr {
+          display: block;
+        }
+        
+        .projects-container table td {
+          display: block !important;
+          width: 100% !important;
+          text-align: center;
+        }
+        
+        .surveys-container table tr {
+          display: block;
+        }
+        
+        .surveys-container table td {
+          display: block !important;
+          width: 100% !important;
+          text-align: center;
+        }
+      }
+    }
+  </style>
 
 </head>
 
@@ -63,9 +137,9 @@
               <h1>
                 Devan Shah
               </h1>
-              <p>I am a third year undergraduate in Computer Science at Princeton University pursuing a minor in mathematics. I am a member of the <a href="https://www.minregret.com/"> Hazan Lab </a> led by <a href="https://www.ehazan.com/"> Prof. Elad Hazan</a>. 
+              <p>I am a rising senior in Computer Science at Princeton University pursuing a minor in mathematics. I am a member of the <a href="https://www.minregret.com/"> Hazan Lab</a>, and I am grateful to have my junior and senior thesis be advised by Prof. Elad Hazan. Through the Hazan Lab, I work with <a href="https://sites.google.com/view/gbrainprinceton/projects/spectral-transformers"> Google DeepMind Princeton</a> on sequence prediction models based in SSMs and convolutional architectures. Previously I worked on ML for authentication under the guidance of <a href="https://www.cpp.edu/faculty/tingtingchen/index.shtml"> Prof. Tingting Chen </a> at CPP.  I've also recently worked on projects with <a href = 'https://www.janestreet.com'> Jane Street</a> and <a href = 'https://www.tiktok.com'> TikTok </a>.
               </p>
-              <p>Broadly, I am interested in post-transformer architectures, such as <a href = "https://sites.google.com/view/gbrainprinceton/projects/spectral-transformers"> state space models</a>, and applications of machine learning to understanding thought and behavioral patterns. I currently work on efficient attention mechanisms with the spectral transform unit. At Princeton, I help host a reading group in natural language processing and chair our ACM chapter, with a general hope of increasing accessibility to research. 
+              <p> Broadly, I am interested in better understanding language models, such as improving how models reason, designing post-transformer architectures, and thinking more about post-training. At Princeton, I help host reading groups in natural language processing, computer vision, competitive programming, and cryptography, and I chair our ACM chapter, with a general hope of encouraging more research on campus. I also frequent many hackathons.
               </p>
 
               <p style="text-align:center">
@@ -100,13 +174,17 @@
           {% for cat in post.categories %}
           {% if cat == 'work' %}
           <tr>
-            <td style="padding:2.5%;width:20%;vertical-align:middle;min-width:120px">
+            <td style="padding:2%;width:20%;vertical-align:middle;min-width:120px">
               <div style="text-align:center;">
-                <img src="{{post.image}}" alt="project image" style="width:50%; height:auto;" />
+                {% if post.image == '/images/minregret.png' %}
+                <img src="{{post.image}}" alt="project image" style="width:100%; height:auto;" />
+                {% else %}
+                <img src="{{post.image}}" alt="project image" style="width:40%; height:auto;" />
+                {% endif %}
             </div>
             
             </td>
-            <td style="padding:2.5%;width:75%;vertical-align:middle">
+            <td style="padding:2%;width:75%;vertical-align:middle">
               <a href="{{post.website}}"> <h3>{{post.title}}</h3> </a>
 
               <!-- {% if post.website %}
@@ -135,7 +213,7 @@
               <a href="{{post.video2}}">video #2</a> /
               {% endif %}
               {% if post.code %}
-              <a href="{{post.code}}">code</a> /
+              / <a href="{{post.code}}">code</a>
               {% endif %}
               {% if post.poster %}
               <a href="{{post.poster}}">poster</a> /
@@ -151,362 +229,361 @@
           {% endfor %}
           {% endfor %}
         </table>
-        <br>
-        <br>
-        <br>
-
-       
-         <!-- RESEARCH POSTS-->
-         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-          <tr>
-            <td style="padding:2.5%;width:100%;vertical-align:middle">
-              <h2>Projects </h2>
-            </td>
-          </tr>
-        </table>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-
-          {% for post in site.posts %}
-          {% for cat in post.categories %}
-          {% if cat == 'investigations' %}
-          <tr>
-            <td style="padding:2.5%;width:35%;vertical-align:middle;min-width:120px">
-              <img src="{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:{{ post.image_size | default: 80 }}%;" />
-            </td> 
-            <td style="padding:2.5%;width:75%;vertical-align:middle">
-              <h3>{{post.title}}</h3>
-              <br>
-              {{post.authors}}
-
-              <br>
-              <em>{{post.venue}}</em>
-              <br>
-              {% if post.arxiv %}
-              <a href="{{post.arxiv}}">arxiv</a> /
-              {% endif %}
-              {% if post.website %}
-              <a href="{{post.website}}">website</a> /
-              {% endif %}
-              {% if post.paper %}
-              <a href="{{post.paper}}">paper</a> 
-              {% endif %}
-              {% if post.video %}
-              / <a href="{{post.video}}">video</a>
-              {% endif %}
-              {% if post.code %}
-              <a href="{{post.code}}">code</a> /
-              {% endif %}
-              {% if post.poster %}
-              <a href="{{post.poster}}">poster</a> /
-              {% endif %}
-              {% if post.slides %}
-              <a href="{{post.slides}}">slides</a> /
-              {% endif %}
-              <p></p>
-              {{ post.excerpt }}
-            </td>
-          </tr>
-          {% endif %}
-          {% endfor %}
-          {% endfor %}
-        </table>
-        <br>
-        <br>
-        <br>
+<br>
+<br>
+<br>
+    
 
         <!-- RESEARCH POSTS-->
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-          <tr>
-            <td style="padding:2.5%;width:100%;vertical-align:middle">
-              <h2>Surveys </h2>
-            </td>
-          </tr>
-        </table>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+        <!-- PROJECTS SECTION - Modified for Two Columns -->
+<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+  <tr>
+    <td style="padding:2.5%;width:100%;vertical-align:middle">
+      <h2>Papers & Projects</h2>
+    </td>
+  </tr>
+</table>
 
-          {% for post in site.posts %}
-          {% for cat in post.categories %}
-          {% if cat == 'surveys' %}
-          <tr>
-            <td style="padding:2.5%;width:35%;vertical-align:middle;min-width:120px">
-              <img src="{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:{{ post.image_size | default: 80 }}%;" />
-            </td> 
-            <td style="padding:2.5%;width:75%;vertical-align:middle">
-              <h3>{{post.title}}</h3>
-              <br>
-              {{post.authors}}
-
-              <br>
-              <em>{{post.venue}}</em>
-              <br>
-              {% if post.arxiv %}
-              <a href="{{post.arxiv}}">arxiv</a> /
-              {% endif %}
-              {% if post.website %}
-              <a href="{{post.website}}">website</a> /
-              {% endif %}
-              {% if post.paper %}
-              <a href="{{post.paper}}">paper</a> 
-              {% endif %}
-              {% if post.video %}
-              / <a href="{{post.video}}">video</a>
-              {% endif %}
-              {% if post.code %}
-              <a href="{{post.code}}">code</a> /
-              {% endif %}
-              {% if post.poster %}
-              <a href="{{post.poster}}">poster</a> /
-              {% endif %}
-              {% if post.slides %}
-              <a href="{{post.slides}}">slides</a> /
-              {% endif %}
-              <p></p>
-              {{ post.excerpt }}
-            </td>
-          </tr>
+<div class="projects-container" style="display:flex;flex-wrap:wrap;width:100%;margin-right:auto;margin-left:auto;">
+  {% for post in site.posts %}
+  {% for cat in post.categories %}
+  {% if cat == 'investigations' %}
+  <div style="width:50%;padding:10px;box-sizing:border-box;">
+    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;">
+      <tr>
+        <td style="padding:2.5%;width:50%;vertical-align:middle;min-width:100px">
+          <img src="{{post.image}}" alt="project image" style="width:100%; height:auto; max-width:100%;" />
+        </td> 
+        <td style="padding:2.5%;width:70%;vertical-align:middle">
+          <h3>{{post.title}}</h3>
+          <br>
+          {{post.authors}}
+          <br>
+          <em>{{post.venue}}</em>
+          <br>
+          {% if post.arxiv %}
+          <a href="{{post.arxiv}}">arxiv</a> /
           {% endif %}
-          {% endfor %}
-          {% endfor %}
-        </table>
-        <br>
-        <br>
-        <br>
+          {% if post.website %}
+          <a href="{{post.website}}">website</a> /
+          {% endif %}
+          {% if post.paper %}
+          <a href="{{post.paper}}">paper</a> 
+          {% endif %}
+          {% if post.video %}
+          / <a href="{{post.video}}">video</a>
+          {% endif %}
+          {% if post.code %}
+          / <a href="{{post.code}}">code</a>
+          {% endif %}
+          {% if post.poster %}
+          / <a href="{{post.poster}}">poster</a>
+          {% endif %}
+          {% if post.slides %}
+          / <a href="{{post.slides}}">slides</a>
+          {% endif %}
+          <p></p>
+          {{ post.excerpt }}
+        </td>
+      </tr>
+    </table>
+  </div>
+  {% endif %}
+  {% endfor %}
+  {% endfor %}
+</div>
+<br>
 
-        
-        <!-- COURSEWORK POSTS-->
-       <!--  <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+
+<!-- SURVEYS SECTION - Modified for Two Columns -->
+<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+  <tr>
+    <td style="padding:2.5%;width:100%;vertical-align:middle">
+      <h2>Surveys</h2>
+    </td>
+  </tr>
+</table>
+
+<div class="surveys-container" style="display:flex;flex-wrap:wrap;width:100%;margin-right:auto;margin-left:auto;">
+  {% for post in site.posts %}
+  {% for cat in post.categories %}
+  {% if cat == 'surveys' %}
+  <div style="width:50%;padding:10px;box-sizing:border-box;">
+    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;">
+      <tr>
+        <td style="padding:2.5%;width:50%;vertical-align:middle;min-width:100px">
+          <img src="{{post.image}}" alt="project image" style="width:100%; height:auto; max-width:100%;" />
+        </td> 
+        <td style="padding:2.5%;width:70%;vertical-align:middle">
+          <h3>{{post.title}}</h3>
+          <br>
+          {{post.authors}}
+          <br>
+          <em>{{post.venue}}</em>
+          <br>
+          {% if post.arxiv %}
+          <a href="{{post.arxiv}}">arxiv</a> /
+          {% endif %}
+          {% if post.website %}
+          <a href="{{post.website}}">website</a> /
+          {% endif %}
+          {% if post.paper %}
+          <a href="{{post.paper}}">paper</a> 
+          {% endif %}
+          {% if post.video %}
+          / <a href="{{post.video}}">video</a>
+          {% endif %}
+          {% if post.code %}
+          <a href="{{post.code}}">code</a> /
+          {% endif %}
+          {% if post.poster %}
+          <a href="{{post.poster}}">poster</a> /
+          {% endif %}
+          {% if post.slides %}
+          <a href="{{post.slides}}">slides</a> /
+          {% endif %}
+          <p></p>
+          {{ post.excerpt }}
+        </td>
+      </tr>
+    </table>
+  </div>
+  {% endif %}
+  {% endfor %}
+  {% endfor %}
+</div>
+
+        <!-- COURSEWORK SECTION -->
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tr>
             <td style="padding:2.5%;width:100%;vertical-align:middle">
               <h2>Coursework</h2>
             </td>
           </tr>
         </table>
+
+        <div class="coursework-container" style="display:flex;flex-wrap:wrap;width:100%;max-width:1000px;margin-right:auto;margin-left:auto;gap:20px;">
+          <!-- Left Column -->
+          <div style="flex:1;min-width:300px;">
+            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;">
+              <tr>
+                <td style="padding:0% 2.5% 2.5% 2.5%;width:100%;vertical-align:middle">
+                  <h3>Computer Science</h3>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding:0% 2.5% 0% 2.5%;">
+                  <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;">
+                    <tr>
+                      <td style="padding:0.3% 0% 0.3% 0%;width:20%;vertical-align:middle;"> COS217 </td>
+                      <td style="padding:0.3% 2.5% 0.3% 1%;width:80%;vertical-align:middle;"> Introduction to Programming Systems </td>
+                    </tr>
+                    <tr>
+                      <td style="padding:0.3% 0% 0.3% 0%;width:20%;vertical-align:middle;"> COS226</td>
+                      <td style="padding:0.3% 2.5% 0.3% 1%;width:80%;vertical-align:middle;"> Algorithms and Data Structures </td>
+                    </tr>
+                    <tr>
+                      <td style="padding:0.3% 0% 0.3% 0%;width:20%;vertical-align:middle;"> COS418 </td>
+                      <td style="padding:0.3% 2.5% 0.3% 1%;width:80%;vertical-align:middle;"> Distributed Systems</td>
+                    </tr>
+                    <tr>
+                      <td style="padding:0.3% 0% 0.3% 0%;width:20%;vertical-align:middle;"> ECE435 </td>
+                      <td style="padding:0.3% 2.5% 0.3% 1%;width:80%;vertical-align:middle;"> Machine Learning and Pattern Recognition </td>
+                    </tr>
+                    <tr>
+                      <td style="padding:0.3% 0% 0.3% 0%;width:20%;vertical-align:middle;"> COS435  </td>
+                      <td style="padding:0.3% 2.5% 0.3% 1%;width:80%;vertical-align:middle;"> Introduction to Reinforcement Learning</td>
+                    </tr>
+                    <tr>
+                      <td style="padding:0.3% 0% 0.3% 0%;width:20%;vertical-align:middle;"> COS484 </td>
+                      <td style="padding:0.3% 2.5% 0.3% 1%;width:80%;vertical-align:middle;"> Natural Language Processing</td>
+                    </tr>
+                    <tr>
+                      <td style="padding:0.3% 0% 0.3% 0%;width:20%;vertical-align:middle;"> COS597</td>
+                      <td style="padding:0.3% 2.5% 0.3% 1%;width:80%;vertical-align:middle;"> Long Term Memory in AI - Vector Search and Databases </td>
+                    </tr>
+                    <tr>
+                      <td style="padding:0.3% 0% 0.3% 0%;width:20%;vertical-align:middle;"> COS597 </td>
+                      <td style="padding:0.3% 2.5% 0.3% 1%;width:80%;vertical-align:middle;"> Systems and Machine Learning </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              
+              <tr>
+                <td style="padding:2.5% 2.5% 2.5% 2.5%;width:100%;vertical-align:middle">
+                  <h3>Math</h3>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding:0% 2.5% 0% 2.5%;">
+                  <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;">
+                    <tr>
+                      <td style="padding:0.3% 0% 0.3% 0%;width:20%;vertical-align:middle;"> MAT216 </td>
+                      <td style="padding:0.3% 2.5% 0.3% 1%;width:80%;vertical-align:middle;"> Multivariable Analysis and Linear Algebra I </td>
+                    </tr>
+                    <tr>
+                      <td style="padding:0.3% 0% 0.3% 0%;width:20%;vertical-align:middle;"> MAT218 </td>
+                      <td style="padding:0.3% 2.5% 0.3% 1%;width:80%;vertical-align:middle;"> Multivariable Analysis and Linear Algebra II</td>
+                    </tr>
+                    <tr>
+                      <td style="padding:0.3% 0% 0.3% 0%;width:20%;vertical-align:middle;"> ECO310</td>
+                      <td style="padding:0.3% 2.5% 0.3% 1%;width:80%;vertical-align:middle;"> Microeconomic Theory: A Mathematical Approach</td>
+                    </tr>
+                    <tr>
+                      <td style="padding:0.3% 0% 0.3% 0%;width:20%;vertical-align:middle;"> MAT377 </td>
+                      <td style="padding:0.3% 2.5% 0.3% 1%;width:80%;vertical-align:middle;"> Combinatorial Mathematics</td>
+                    </tr>
+                    <tr>
+                      <td style="padding:0.3% 0% 0.3% 0%;width:20%;vertical-align:middle;"> MAT385 </td>
+                      <td style="padding:0.3% 2.5% 0.3% 1%;width:80%;vertical-align:middle;"> Probability Theory</td>
+                    </tr>
+                    <tr>
+                      <td style="padding:0.3% 0% 0.3% 0%;width:20%;vertical-align:middle;"> MAT478 </td>
+                      <td style="padding:0.3% 2.5% 0.3% 1%;width:80%;vertical-align:middle;"> The Probabilistic Method</td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </div>
+
+          <!-- Right Column -->
+          <div style="flex:1;min-width:300px;">
+            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;">
+              <tr>
+                <td style="padding:0% 2.5% 2.5% 2.5%;width:100%;vertical-align:middle">
+                  <h3>Theory</h3>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding:0% 2.5% 0% 2.5%;">
+                  <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;">
+                    <tr>
+                      <td style="padding:0.3% 0% 0.3% 0%;width:20%;vertical-align:middle;"> ECE434 </td>
+                      <td style="padding:0.3% 2.5% 0.3% 1%;width:80%;vertical-align:middle;"> Theoretical Machine Learning</td>
+                    </tr>
+                    <tr>
+                      <td style="padding:0.3% 0% 0.3% 0%;width:20%;vertical-align:middle;"> COS445 </td>
+                      <td style="padding:0.3% 2.5% 0.3% 1%;width:80%;vertical-align:middle;"> Economics and Computing </td>
+                    </tr>
+                    <tr>
+                      <td style="padding:0.3% 0% 0.3% 0%;width:20%;vertical-align:middle;"> COS521 </td>
+                      <td style="padding:0.3% 2.5% 0.3% 1%;width:80%;vertical-align:middle;"> Advanced Algorithm Design</td>
+                    </tr>
+                    <tr>
+                      <td style="padding:0.3% 0% 0.3% 0%;width:20%;vertical-align:middle;"> COS522 </td>
+                      <td style="padding:0.3% 2.5% 0.3% 1%;width:80%;vertical-align:middle;"> Computational Complexity</td>
+                    </tr>
+                    <tr>
+                      <td style="padding:0.3% 0% 0.3% 0%;width:20%;vertical-align:middle;"> COS585 </td>
+                      <td style="padding:0.3% 2.5% 0.3% 1%;width:80%;vertical-align:middle;"> Information Theory and Applications</td>
+                    </tr>
+                    <tr>
+                      <td style="padding:0.3% 0% 0.3% 0%;width:20%;vertical-align:middle;"> ORF543  </td>
+                      <td style="padding:0.3% 2.5% 0.3% 1%;width:80%;vertical-align:middle;"> Deep Learning Theory</td>
+                    </tr>
+                    <tr>
+                      <td style="padding:0.3% 0% 0.3% 0%;width:20%;vertical-align:middle;"> COS598  </td>
+                      <td style="padding:0.3% 2.5% 0.3% 1%;width:80%;vertical-align:middle;"> Theory of Natural Algorithms</td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+
+              <tr>
+                <td style="padding:2.5% 2.5% 2.5% 2.5%;width:100%;vertical-align:middle">
+                  <h3>Creative Writing</h3>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding:0% 2.5% 0% 2.5%;">
+                  <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;">
+                    <tr>
+                      <td style="padding:0.3% 0% 0.3% 0%;width:20%;vertical-align:middle;"> FRS116</td>
+                      <td style="padding:0.3% 2.5% 0.3% 1%;width:80%;vertical-align:middle;"> Evolution of Human Language</td>
+                    </tr>
+                    <tr>
+                      <td style="padding:0.3% 0% 0.3% 0%;width:20%;vertical-align:middle;"> CWR202 </td>
+                      <td style="padding:0.3% 2.5% 0.3% 1%;width:80%;vertical-align:middle;"> Creative Writing (Poetry)</td>
+                    </tr>
+                    <tr>
+                      <td style="padding:0.3% 0% 0.3% 0%;width:20%;vertical-align:middle;"> POL316 </td>
+                      <td style="padding:0.3% 2.5% 0.3% 1%;width:80%;vertical-align:middle;"> Civil Liberties</td>
+                    </tr>
+                    <tr>
+                      <td style="padding:0.3% 0% 0.3% 0%;width:20%;vertical-align:middle;"> ATL494 </td>
+                      <td style="padding:0.3% 2.5% 0.3% 1%;width:80%;vertical-align:middle;"> Creating Comedy for Television </td>
+                    </tr>
+                    <tr>
+                      <td style="padding:0.3% 0% 0.3% 0%;width:20%;vertical-align:middle;"> ATL497 </td>
+                      <td style="padding:0.3% 2.5% 0.3% 1%;width:80%;vertical-align:middle;"> How to Write a Monologue </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+
+        <!-- <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          <tr>
+            <td style="padding:1% 2.5% 2.5% 2.5%;width:100%;vertical-align:middle;text-align:center;">
+              <p style="font-size:small;color:#666;">* denotes ongoing course</p>
+            </td>
+          </tr>
+        </table>
+        <br> -->
+        <br>
+        <br>
+
+        <!-- HACKATHONS SECTION -->
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-
-          {% for post in site.posts %}
-          {% for cat in post.categories %}
-          {% if cat == 'coursework' %}
           <tr>
-            <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
-              <img src="{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
-            </td>
-            <td style="padding:2.5%;width:75%;vertical-align:middle">
-              <h3>{{post.title}}</h3>
-              <br>
-              <em>{{post.course}}</em>
-              <br>
-	      {{post.authors}}
-              {{ post.date | date: "%Y-%m-%d" }}
-
-              <br>
-              {% if post.website %}
-              <a href="{{post.website}}">website</a> /
-              {% endif %}
-              {% if post.paper %}
-              <a href="{{post.paper}}">paper</a> /
-              {% endif %}
-              {% if post.patent %}
-              <a href="{{post.patent}}">patent</a> /
-              {% endif %}
-              {% if post.patent2 %}
-              <a href="{{post.patent2}}">patent #2</a> /
-              {% endif %}
-              {% if post.patent3 %}
-              <a href="{{post.patent3}}">patent #3</a> /
-              {% endif %}
-              {% if post.video %}
-              <a href="{{post.video}}">video</a> /
-              {% endif %}
-              {% if post.video2 %}
-              <a href="{{post.video2}}">video #2</a> /
-              {% endif %}
-              {% if post.code %}
-              <a href="{{post.code}}">code</a> /
-              {% endif %}
-              {% if post.poster %}
-              <a href="{{post.poster}}">poster</a> /
-              {% endif %}
-              {% if post.slides %}
-              <a href="{{post.slides}}">slides</a> /
-              {% endif %}
-              <p></p>
-              {{ post.excerpt }}
+            <td style="padding:2.5%;width:100%;vertical-align:middle">
+              <h2>Hackathons</h2>
             </td>
           </tr>
-          {% endif %}
-          {% endfor %}
-          {% endfor %}
-        </table> -->
+        </table>
 
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tr>
-            <td style="padding:2.5% 0% 0% 2.5%;width:100%;vertical-align:middle">
-              <h2>Coursework</h2>
-            </td>
-          </tr>
-          <tr>
-            <td style="padding:1.5% 2.5% 0.1% 2.5%;width:100%;vertical-align:middle">
-              <h3>Computer Science</h3>
-            </td>
-          </tr>
-          <tr>
             <td>
               <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
                 <tr>
-                  <td style="padding-left:2.5%;width:10%;vertical-align:middle"> COS217 </td>
-                  <td style="padding-left:2.5%;width:90%;vertical-align:middle"> Introduction to Programming Systems (C and Assembly) </td>
+                  <td style="padding:0.5% 0% 0.5% 2.5%;width:10%;vertical-align:middle;font-weight:bold;"> 2025 </td>
+                  <td style="padding:0.5% 2.5% 0.5% 1%;width:90%;vertical-align:middle;"> Anthropic Alignment Hack #2/13</td>
                 </tr>
                 <tr>
-                  <td style="padding-left:2.5%;width:10%;vertical-align:middle"> COS226 </td>
-                  <td style="padding-left:2.5%;width:90%;vertical-align:middle"> Algorithms and Data Structures </td>
+                  <td style="padding:0.5% 0% 0.5% 2.5%;width:10%;vertical-align:middle;font-weight:bold;"> 2025 </td>
+                  <td style="padding:0.5% 2.5% 0.5% 1%;width:90%;vertical-align:middle;"> Stanford Treehacks Codegen: Best Code Generation Application #1/24</td>
                 </tr>
                 <tr>
-                  <td style="padding-left:2.5%;width:10%;vertical-align:middle"> COS418 </td>
-                  <td style="padding-left:2.5%;width:90%;vertical-align:middle"> Distributed Systems </td>
+                  <td style="padding:0.5% 0% 0.5% 2.5%;width:10%;vertical-align:middle;font-weight:bold;"> 2024 </td>
+                  <td style="padding:0.5% 2.5% 0.5% 1%;width:90%;vertical-align:middle;"> Columbia DevFest Overall Winners #1/54</td>
                 </tr>
                 <tr>
-                  <td style="padding-left:2.5%;width:10%;vertical-align:middle"> ECE435 </td>
-                  <td style="padding-left:2.5%;width:90%;vertical-align:middle"> Machine Learning and Pattern Recognition </td>
-                </tr>
-		<tr>
-                  <td style="padding-left:2.5%;width:10%;vertical-align:middle"> COS435<sup>*</sup>  </td>
-                  <td style="padding-left:2.5%;width:90%;vertical-align:middle"> Introduction to Reinforcement Learning </td>
-                </tr>
-		<tr>
-                  <td style="padding-left:2.5%;width:10%;vertical-align:middle"> COS484 <sup>*</sup>  </td>
-                  <td style="padding-left:2.5%;width:90%;vertical-align:middle"> Natural Language Processing </td>
+                  <td style="padding:0.5% 0% 0.5% 2.5%;width:10%;vertical-align:middle;font-weight:bold;"> 2023 </td>
+                  <td style="padding:0.5% 2.5% 0.5% 1%;width:90%;vertical-align:middle;"> MIT Energy and Climate Hackathon #3/80</td>
                 </tr>
                 <tr>
-                  <td style="padding-left:2.5%;width:10%;vertical-align:middle"> COS597</td>
-                  <td style="padding-left:2.5%;width:90%;vertical-align:middle"> Long Term Memory in AI - Vector Search and Databases </td>
+                  <td style="padding:0.5% 0% 0.5% 2.5%;width:10%;vertical-align:middle;font-weight:bold;"> 2023 </td>
+                  <td style="padding:0.5% 2.5% 0.5% 1%;width:90%;vertical-align:middle;"> HackHarvard CareYaya Track #1/24</td>
                 </tr>
                 <tr>
-                  <td style="padding-left:2.5%;width:10%;vertical-align:middle"> COS597 </td>
-                  <td style="padding-left:2.5%;width:90%;vertical-align:middle"> Systems and Machine Learning </td>
-                </tr>
-              </table>
-            </td>
-          </tr>
-          <tr>
-            <td style="padding:1.5% 2.5% 0.1% 2.5%;width:100%;vertical-align:middle">
-              <h3>  Theory</h3>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-
-                <tr>
-                  <td style="padding-left:2.5%;width:10%;vertical-align:middle"> ECE434 </td>
-                  <td style="padding-left:2.5%;width:90%;vertical-align:middle"> Theoretical Machine Learning </td>
-                </tr>
-		<tr>
-                  <td style="padding-left:2.5%;width:10%;vertical-align:middle"> COS445 <sup>*</sup></td>
-                  <td style="padding-left:2.5%;width:90%;vertical-align:middle"> Economics and Computing </td>
+                  <td style="padding:0.5% 0% 0.5% 2.5%;width:10%;vertical-align:middle;font-weight:bold;"> 2023 </td>
+                  <td style="padding:0.5% 2.5% 0.5% 1%;width:90%;vertical-align:middle;"> Princeton HackaTron Web3 Hack #2</td>
                 </tr>
                 <tr>
-                  <td style="padding-left:2.5%;width:10%;vertical-align:middle"> COS521 </td>
-                  <td style="padding-left:2.5%;width:90%;vertical-align:middle"> Advanced Algorithm Design </td>
-                </tr>
-                <tr>
-                  <td style="padding-left:2.5%;width:10%;vertical-align:middle"> COS522 </td>
-                  <td style="padding-left:2.5%;width:90%;vertical-align:middle"> Computational Complexity </td>
-                </tr>
-                <tr>
-                  <td style="padding-left:2.5%;width:10%;vertical-align:middle"> COS585 </td>
-                  <td style="padding-left:2.5%;width:90%;vertical-align:middle"> Information Theory and Applications </td>
-                </tr>
-
-                <tr>
-                  <td style="padding-left:2.5%;width:10%;vertical-align:middle"> ORF543  </td>
-                  <td style="padding-left:2.5%;width:90%;vertical-align:middle"> Deep Learning Theory </td>
-                </tr>
-
-                <tr>
-                  <td style="padding-left:2.5%;width:10%;vertical-align:middle"> COS598  </td>
-                  <td style="padding-left:2.5%;width:90%;vertical-align:middle"> Theory of Natural Algorithms </td>
-                </tr>
-                
-              </table>
-            </td>
-          </tr>
-
-          <tr>
-            <td style="padding:1.5% 2.5% 0.1% 2.5%;width:100%;vertical-align:middle">
-              <h3> Math</h3>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-                <tr>
-                  <td style="padding-left:2.5%;width:10%;vertical-align:middle"> MAT216 </td>
-                  <td style="padding-left:2.5%;width:90%;vertical-align:middle"> Multivariable Analysis and Linear Algebra I</td>
-                </tr>
-                <tr>
-                  <td style="padding-left:2.5%;width:10%;vertical-align:middle"> MAT218 </td>
-                  <td style="padding-left:2.5%;width:90%;vertical-align:middle"> Multivariable Analysis and Linear Algebra II</td>
-                </tr>
-                <tr>
-                  <td style="padding-left:2.5%;width:10%;vertical-align:middle"> ECO310 </td>
-                  <td style="padding-left:2.5%;width:90%;vertical-align:middle"> Microeconomic Theory: A Mathematical Approach</td>
-                </tr>
-                <tr>
-                  <td style="padding-left:2.5%;width:10%;vertical-align:middle"> MAT377 </td>
-                  <td style="padding-left:2.5%;width:90%;vertical-align:middle"> Combinatorial Mathematics </td>
-                </tr>
-                <tr>
-                  <td style="padding-left:2.5%;width:10%;vertical-align:middle"> MAT385<sup>*</sup> </td>
-                  <td style="padding-left:2.5%;width:90%;vertical-align:middle"> Probability Theory </td>
-                </tr>
-                <tr>
-                  <td style="padding-left:2.5%;width:10%;vertical-align:middle"> MAT478 </td>
-                  <td style="padding-left:2.5%;width:90%;vertical-align:middle"> The Probabilistic Method </td>
-                </tr>
-                
-              </table>
-            </td>
-          </tr>
-
-          <tr>
-            <td style="padding:1.5% 2.5% 0.1% 2.5%;width:100%;vertical-align:middle">
-              <h3> Creative Writing </h3>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-                <tr>
-                  <td style="padding-left:2.5%;width:10%;vertical-align:middle"> FRS116 </td>
-                  <td style="padding-left:2.5%;width:90%;vertical-align:middle"> Evolution of Human Language </td>
-                </tr>
-                <tr>
-                  <td style="padding-left:2.5%;width:10%;vertical-align:middle"> CWR202 </td>
-                  <td style="padding-left:2.5%;width:90%;vertical-align:middle"> Creative Writing (Poetry) </td>
-                </tr>
-		<tr>
-                  <td style="padding-left:2.5%;width:10%;vertical-align:middle"> POl316 </td>
-                  <td style="padding-left:2.5%;width:90%;vertical-align:middle"> Civil Liberties </td>
-                </tr>
-                <tr>
-                  <td style="padding-left:2.5%;width:10%;vertical-align:middle"> ATL494 </td>
-                  <td style="padding-left:2.5%;width:90%;vertical-align:middle"> Creating Comedy for Television </td>
-                </tr>
-                <tr>
-                  <td style="padding-left:2.5%;width:10%;vertical-align:middle"> ATL497 </td>
-                  <td style="padding-left:2.5%;width:90%;vertical-align:middle"> How to Write a Monologue </td>
+                  <td style="padding:0.5% 0% 0.5% 2.5%;width:10%;vertical-align:middle;font-weight:bold;"> 2022 </td>
+                  <td style="padding:0.5% 2.5% 0.5% 1%;width:90%;vertical-align:middle;"> HackPrinceton Best AI Hack</td>
                 </tr>
               </table>
             </td>
           </tr>
         </table>
-        <br> 
-        <tr>
-          <td style="padding-left:2.5%;width:10%;vertical-align:middle"> * denotes ongoing course </td>
-        </tr>
+        <br>
                
-
-
       </td>
     </tr>
   </table>

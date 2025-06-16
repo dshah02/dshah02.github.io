@@ -6,5 +6,5 @@ image: /images/ssm_survey.png
 categories: surveys    
 authors: "<b> Devan Shah* </b>, Brandon Cho* (Equal Contribution)"
 paper: /pdfs/ssm_survey.pdf
-venue: State Space Models
+venue: 
 ---
