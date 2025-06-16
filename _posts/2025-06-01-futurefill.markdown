@@ -2,7 +2,7 @@
 layout: post
 title:  "FutureFill: Fast Generation from Convolutional Sequence Models"
 date:   2025-06-01 3:24:59 +00:00
-image: /images/futurefill.png
+image: /images/futurefill_.png
 categories: investigations
 authors: "Naman Agarwal, Xinyi Chen, Evan Dogariu, <b>Devan Shah</b>, Hubert Strauss, Vladimir Feinberg, Daniel Suo, Peter Bartlett, Elad Hazan" 
 venue: Preprint (ArXiv pending update)
