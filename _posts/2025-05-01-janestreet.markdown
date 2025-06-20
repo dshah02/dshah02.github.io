@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Research Intern at Jane Street
+title:  Quantitative Research Intern at Jane Street
 image: /images/jane_street_logo.png
 categories: work  
 period: May 2025 — Present
