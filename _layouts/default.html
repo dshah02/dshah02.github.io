@@ -41,6 +41,45 @@
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 
   <style>
+    /* Highlighting styles for featured paper titles - highlighter pen effect */
+    .highlighted-title {
+      background: linear-gradient(104deg, 
+        transparent 0.9%, 
+        rgba(255, 255, 0, 0.7) 2.4%, 
+        rgba(255, 255, 0, 0.5) 5.8%, 
+        rgba(255, 255, 0, 0.4) 93%, 
+        rgba(255, 255, 0, 0.7) 96%, 
+        transparent 98%
+      ), 
+      linear-gradient(183deg, 
+        transparent 0%, 
+        rgba(255, 255, 0, 0.3) 7.9%, 
+        transparent 15%
+      );
+      text-decoration: none;
+      display: inline;
+      box-decoration-break: clone;
+      -webkit-box-decoration-break: clone;
+    }
+    
+    /* Optional: Add a subtle animation on hover */
+    .highlighted-title:hover {
+      background: linear-gradient(104deg, 
+        transparent 0.9%, 
+        rgba(255, 255, 0, 0.8) 2.4%, 
+        rgba(255, 255, 0, 0.6) 5.8%, 
+        rgba(255, 255, 0, 0.5) 93%, 
+        rgba(255, 255, 0, 0.8) 96%, 
+        transparent 98%
+      ), 
+      linear-gradient(183deg, 
+        transparent 0%, 
+        rgba(255, 255, 0, 0.4) 7.9%, 
+        transparent 15%
+      );
+      transition: background 0.3s ease;
+    }
+
     /* Responsive styles for small screens */
     @media (max-width: 768px) {
       /* Projects & Papers section */
@@ -140,6 +179,9 @@
               <p>I am a rising senior in Computer Science at Princeton University pursuing a minor in mathematics. I grateful to be advised by Prof. Elad Hazan. Through the Hazan Lab, I work with <a href="https://sites.google.com/view/gbrainprinceton/projects/spectral-transformers"> Google DeepMind Princeton</a> on language modeling and dynamical systems. Previously I worked with Prof. Tingting Chen on ML for authentication. 
               </p>
               <p> Broadly, I am interested in better understanding language models, such as improving how models reason, designing post-transformer architectures, and thinking more about post-training. At Princeton, I help host a few reading groups and chair our ACM chapter.
+              </p>
+
+              <p> Some recent work I am especially proud of are <a href= "https://arxiv.org/pdf/2505.17868" >[1]</a> and <a href= "https://arxiv.org/pdf/2410.03766" >[2]</a>.
               </p>
 
               <p style="text-align:center">
@@ -255,7 +297,7 @@
           <img src="{{post.image}}" alt="project image" style="width:100%; height:auto; max-width:100%;" />
         </td> 
         <td style="padding:2.5%;width:70%;vertical-align:middle">
-          <h3>{{post.title}}</h3>
+          <h3{% if post.highlight %} class="highlighted-title"{% endif %}>{{post.title}}</h3>
           <br>
           {{post.authors}}
           <br>
@@ -315,7 +357,7 @@
           <img src="{{post.image}}" alt="project image" style="width:100%; height:auto; max-width:100%;" />
         </td> 
         <td style="padding:2.5%;width:70%;vertical-align:middle">
-          <h3>{{post.title}}</h3>
+          <h3{% if post.highlight %} class="highlighted-title"{% endif %}>{{post.title}}</h3>
           <br>
           {{post.authors}}
           <br>

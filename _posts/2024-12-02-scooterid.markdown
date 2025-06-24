@@ -8,4 +8,5 @@ authors: "<b> Devan Shah </b>, Ruoqi Huang, Nisha Vinayaga-Sureshkanth, Tingting
 paper: /pdfs/ScooterId.pdf
 website: https://ieeexplore.ieee.org/abstract/document/10704617
 venue: IEEE TMC 2025
+highlight: True
 ---
