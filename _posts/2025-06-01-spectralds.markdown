@@ -9,6 +9,7 @@ venue: Preprint
 paper: https://arxiv.org/pdf/2505.17868
 code: https://github.com/dshah02/SpectraLDS
 slides: /pdfs/spectralds_slides.pdf
+site: /spectralds.io
 highlight: True
 # excerpt: We present the first provable method for identifying symmetric linear dynamical systems (LDS) with accuracy guarantees that are independent of the systems' state dimension or effective memory. We evaluate our method, SpectraLDS, as a component in sequence prediction architectures and demonstrate that accuracy is preserved while inference efficiency is improved on tasks such as language modeling.
 ---
