@@ -9,6 +9,5 @@ venue: Preprint
 paper: https://arxiv.org/pdf/2410.03766
 code: https://github.com/dshah02/FF_FlashSTU
 slides: /pdfs/stu_to_futurefill.pdf 
-highlight: True
 # excerpt: We address the challenge of efficient auto-regressive generation in sequence prediction models by introducing FutureFill—a general-purpose fast generation method for any sequence prediction algorithm based on convolutional operators. FutureFill reduces generation time from quadratic to quasilinear in the context length. 
 ---
