@@ -3,7 +3,7 @@ layout: post
 title:  "ScooterId: Posture-Based Continuous User Identification From Mobility Scooter Rides"
 date:   2024-12-02 3:24:59 +00:00
 image: /images/scooterid.png
-categories: investigations    
+categories: research    
 authors: "<b> Devan Shah </b>, Ruoqi Huang, Nisha Vinayaga-Sureshkanth, Tingting Chen, Murtuza Jadliwala"
 paper: /pdfs/ScooterID.pdf
 website: https://ieeexplore.ieee.org/abstract/document/10704617

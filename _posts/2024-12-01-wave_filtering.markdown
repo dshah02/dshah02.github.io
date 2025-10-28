@@ -7,5 +7,5 @@ categories: investigations
 authors: "<b> Devan Shah* </b>, Brandon Cho*"
 paper: /pdfs/wave_filtering.pdf
 code: https://github.com/dshah02/Filters_For_General_LDS
-venue: Idea
+
 ---

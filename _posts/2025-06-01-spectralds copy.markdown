@@ -3,9 +3,9 @@ layout: post
 title:  "SpectraLDS: Provable Distillation for Linear Dynamical Systems"
 date:   2025-06-02 3:24:59 +00:00
 image: /images/spectralds.png
-categories: investigations
+categories: research
 authors: "<b>Devan Shah</b>, Shlomo Fortgang, Sofiia Druchyna, Elad Hazan"
-venue: Preprint
+venue: NeurIPS 2025
 paper: https://arxiv.org/pdf/2505.17868
 code: https://github.com/dshah02/SpectraLDS
 slides: /pdfs/spectralds_slides.pdf
