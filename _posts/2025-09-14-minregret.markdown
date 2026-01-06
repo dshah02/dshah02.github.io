@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Hazan Lab w/ Google DeepMind Princeton"
+title:  "Princeton Hazan Lab"
 image: /images/deluca.svg
 website: https://sites.google.com/view/gbrainprinceton/projects/spectral-transformers
 categories: work  
