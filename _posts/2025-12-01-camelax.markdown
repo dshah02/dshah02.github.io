@@ -1,0 +1,11 @@
+---
+layout: post
+title:  "Camelax: A Lightweight Machine Learning Library in OCaml"
+date:   2025-12-01 3:24:59 +00:00
+image: /images/camelax.png
+categories: investigations
+authors: "<b>Devan Shah</b>*, Daniel Yang*"
+venue: 
+paper: /pdfs/camelax.pdf
+code: https://github.com/dshah02/camelax
+---

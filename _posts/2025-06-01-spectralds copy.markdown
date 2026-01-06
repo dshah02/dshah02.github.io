@@ -6,7 +6,7 @@ image: /images/spectralds.png
 categories: research
 authors: "<b>Devan Shah</b>, Shlomo Fortgang, Sofiia Druchyna, Elad Hazan"
 venue: NeurIPS 2025
-paper: https://arxiv.org/pdf/2505.17868
+paper: https://openreview.net/pdf?id=FS5bIryxEx
 code: https://github.com/dshah02/SpectraLDS
 slides: /pdfs/spectralds_slides.pdf
 website: /spectralds.io
