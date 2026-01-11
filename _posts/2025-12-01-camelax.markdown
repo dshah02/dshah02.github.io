@@ -6,6 +6,6 @@ image: /images/camelax.png
 categories: investigations
 authors: "<b>Devan Shah</b>*, Daniel Yang*"
 venue: 
-paper: /pdfs/camelax.pdf
+paper: /pdfs/Camelax.pdf
 code: https://github.com/dshah02/camelax
 ---
