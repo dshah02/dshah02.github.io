@@ -5,7 +5,7 @@ date:   2025-06-01 3:24:59 +00:00
 image: /images/futurefill_.png
 categories: research
 authors: "Naman Agarwal, Xinyi Chen, Evan Dogariu, <b>Devan Shah</b>, Hubert Strauss, Vladimir Feinberg, Daniel Suo, Peter Bartlett, Elad Hazan" 
-venue: Preprint
+venue: ICLR 2026
 paper: https://arxiv.org/pdf/2410.03766
 code: https://github.com/dshah02/FF_FlashSTU
 slides: /pdfs/stu_to_futurefill.pdf 
