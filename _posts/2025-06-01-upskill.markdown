@@ -1,13 +1,15 @@
 ---
 layout: post
-title:  "UpSkill: Mutual Information Skill learning for Structured Response Diversity in LLMs"
+title:  "UpSkill: Mutual Information Skill Learning for Structured Response Diversity in LLMs"
 date:   2025-06-02 2:24:59 +00:00
-image: /images/upskill.png
+image: /images/upskill_bright.png
+image_width: 100%
 categories: research
 authors: "<b>Devan Shah*</b>, Owen Yang*, Daniel Yang, Chongyi Zheng, Benjamin Eysenbach"
 venue: NeurIPS 2025 Workshop on Scaling Environment for Agents 
 paper: /pdfs/upskill.pdf
 code: https://github.com/dshah02/upskill
 poster: /images/upskill_poster.png
+website: https://dshah.io/upskill
 # excerpt: We present the first provable method for identifying symmetric linear dynamical systems (LDS) with accuracy guarantees that are independent of the systems' state dimension or effective memory. We evaluate our method, SpectraLDS, as a component in sequence prediction architectures and demonstrate that accuracy is preserved while inference efficiency is improved on tasks such as language modeling.
 ---
