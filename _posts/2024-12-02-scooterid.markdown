@@ -6,7 +6,7 @@ image: /images/scooterid.png
 categories: research    
 authors: "<b> Devan Shah </b>, Ruoqi Huang, Nisha Vinayaga-Sureshkanth, Tingting Chen, Murtuza Jadliwala"
 paper: /pdfs/ScooterID.pdf
-website: https://ieeexplore.ieee.org/abstract/document/10704617
+# website: https://ieeexplore.ieee.org/abstract/document/10704617
 venue: IEEE TMC 2025
 highlight: False
 ---

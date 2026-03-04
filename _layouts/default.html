@@ -82,6 +82,20 @@
       transition: background 0.3s ease;
     }
 
+    /* Interactive hover cards for projects */
+    .project-card {
+      display: block;
+      text-decoration: none;
+      color: inherit;
+      border-radius: 12px;
+      transition: background-color 0.2s ease, transform 0.2s ease;
+    }
+
+    .project-card:hover {
+      background-color: #f5f5f5;
+      transform: translateX(6px);
+    }
+
     /* Responsive styles for small screens */
     @media (max-width: 768px) {
 
@@ -148,10 +162,7 @@
 
       /* Elegant dropdown for Work section */
       .work-dropdown {
-        border: 1px solid #e6e6e6;
-        border-radius: 10px;
         padding: 10px 14px;
-        background: #fafafa;
       }
 
       .work-dropdown summary {
@@ -391,49 +402,52 @@
           {% for cat in post.categories %}
           {% if cat == 'research' %}
           <div style="width:50%;padding:10px;box-sizing:border-box;">
-            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;">
-              <tr>
-                <td style="padding:2.5%;width:50%;vertical-align:middle;min-width:100px">
-                  <img src="{{post.image}}" alt="project image"
-                    style="width:{% if post.image_width %}{{post.image_width}}{% else %}100%{% endif %}; height:auto; max-width:{% if post.image_width %}{{post.image_width}}{% else %}100%{% endif %};" />
-                </td>
-                <td style="padding:2.5%;width:70%;vertical-align:middle">
-                  <h3{% if post.highlight %} class="highlighted-title" {% endif %}>{{post.title}}</h3>
-                    <br>
-                    {{post.authors}}
-                    <br>
-                    <em>{{post.venue}}</em>
-                    <br>
-                    {% if post.arxiv %}
-                    <a href="{{post.arxiv}}">arxiv</a> /
-                    {% endif %}
-                    {% if post.website %}
-                    <a href="{{post.website}}">website</a> /
-                    {% endif %}
-                    {% if post.paper %}
-                    <a href="{{post.paper}}">paper</a>
-                    {% endif %}
-                    {% if post.video %}
-                    / <a href="{{post.video}}">video</a>
-                    {% endif %}
-                    {% if post.code %}
-                    / <a href="{{post.code}}">code</a>
-                    {% endif %}
-                    {% if post.poster %}
-                    / <a href="{{post.poster}}">poster</a>
-                    {% endif %}
-                    {% if post.slides %}
-                    / <a href="{{post.slides}}">slides</a>
-                    {% endif %}
-                    <p></p>
-                    {{ post.excerpt }}
-                </td>
-              </tr>
-            </table>
-          </div>
-          {% endif %}
-          {% endfor %}
-          {% endfor %}
+            {% if post.website %}<a href="{{post.website}}" class="project-card">{% else %}<div class="project-card"
+                style="transform:none;background:transparent;">{% endif %}
+                <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;">
+                  <tr>
+                    <td style="padding:2.5%;width:50%;vertical-align:middle;min-width:100px">
+                      <img src="{{post.image}}" alt="project image"
+                        style="width:{% if post.image_width %}{{post.image_width}}{% else %}100%{% endif %}; height:auto; max-width:{% if post.image_width %}{{post.image_width}}{% else %}100%{% endif %};" />
+                    </td>
+                    <td style="padding:2.5%;width:70%;vertical-align:middle">
+                      <h3{% if post.highlight %} class="highlighted-title" {% endif %}>{{post.title}}</h3>
+                        <br>
+                        {{post.authors}}
+                        <br>
+                        <em>{{post.venue}}</em>
+                        <br>
+                        {% if post.arxiv %}
+                        <a href="{{post.arxiv}}">arxiv</a> /
+                        {% endif %}
+                        {% if post.website %}
+                        <a href="{{post.website}}">website</a> /
+                        {% endif %}
+                        {% if post.paper %}
+                        <a href="{{post.paper}}">paper</a>
+                        {% endif %}
+                        {% if post.video %}
+                        / <a href="{{post.video}}">video</a>
+                        {% endif %}
+                        {% if post.code %}
+                        / <a href="{{post.code}}">code</a>
+                        {% endif %}
+                        {% if post.poster %}
+                        / <a href="{{post.poster}}">poster</a>
+                        {% endif %}
+                        {% if post.slides %}
+                        / <a href="{{post.slides}}">slides</a>
+                        {% endif %}
+                        <p></p>
+                        {{ post.excerpt }}
+                    </td>
+                  </tr>
+                </table>
+                {% if post.website %}</a>{% else %}</div>{% endif %}
+        </div>
+        {% endif %}
+        {% endfor %}
+        {% endfor %}
         </div>
         <br>
 
@@ -453,49 +467,52 @@
           {% for cat in post.categories %}
           {% if cat == 'investigations' %}
           <div style="width:50%;padding:10px;box-sizing:border-box;">
-            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;">
-              <tr>
-                <td style="padding:2.5%;width:50%;vertical-align:middle;min-width:100px">
-                  <img src="{{post.image}}" alt="project image"
-                    style="width:{% if post.image_width %}{{post.image_width}}{% else %}100%{% endif %}; height:auto; max-width:{% if post.image_width %}{{post.image_width}}{% else %}100%{% endif %};" />
-                </td>
-                <td style="padding:2.5%;width:70%;vertical-align:middle">
-                  <h3{% if post.highlight %} class="highlighted-title" {% endif %}>{{post.title}}</h3>
-                    <br>
-                    {{post.authors}}
-                    <br>
-                    <em>{{post.venue}}</em>
-                    <br>
-                    {% if post.arxiv %}
-                    <a href="{{post.arxiv}}">arxiv</a> /
-                    {% endif %}
-                    {% if post.website %}
-                    <a href="{{post.website}}">website</a> /
-                    {% endif %}
-                    {% if post.paper %}
-                    <a href="{{post.paper}}">paper</a>
-                    {% endif %}
-                    {% if post.video %}
-                    / <a href="{{post.video}}">video</a>
-                    {% endif %}
-                    {% if post.code %}
-                    / <a href="{{post.code}}">code</a>
-                    {% endif %}
-                    {% if post.poster %}
-                    / <a href="{{post.poster}}">poster</a>
-                    {% endif %}
-                    {% if post.slides %}
-                    / <a href="{{post.slides}}">slides</a>
-                    {% endif %}
-                    <p></p>
-                    {{ post.excerpt }}
-                </td>
-              </tr>
-            </table>
-          </div>
-          {% endif %}
-          {% endfor %}
-          {% endfor %}
+            {% if post.website %}<a href="{{post.website}}" class="project-card">{% else %}<div class="project-card"
+                style="transform:none;background:transparent;">{% endif %}
+                <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;">
+                  <tr>
+                    <td style="padding:2.5%;width:50%;vertical-align:middle;min-width:100px">
+                      <img src="{{post.image}}" alt="project image"
+                        style="width:{% if post.image_width %}{{post.image_width}}{% else %}100%{% endif %}; height:auto; max-width:{% if post.image_width %}{{post.image_width}}{% else %}100%{% endif %};" />
+                    </td>
+                    <td style="padding:2.5%;width:70%;vertical-align:middle">
+                      <h3{% if post.highlight %} class="highlighted-title" {% endif %}>{{post.title}}</h3>
+                        <br>
+                        {{post.authors}}
+                        <br>
+                        <em>{{post.venue}}</em>
+                        <br>
+                        {% if post.arxiv %}
+                        <a href="{{post.arxiv}}">arxiv</a> /
+                        {% endif %}
+                        {% if post.website %}
+                        <a href="{{post.website}}">website</a> /
+                        {% endif %}
+                        {% if post.paper %}
+                        <a href="{{post.paper}}">paper</a>
+                        {% endif %}
+                        {% if post.video %}
+                        / <a href="{{post.video}}">video</a>
+                        {% endif %}
+                        {% if post.code %}
+                        / <a href="{{post.code}}">code</a>
+                        {% endif %}
+                        {% if post.poster %}
+                        / <a href="{{post.poster}}">poster</a>
+                        {% endif %}
+                        {% if post.slides %}
+                        / <a href="{{post.slides}}">slides</a>
+                        {% endif %}
+                        <p></p>
+                        {{ post.excerpt }}
+                    </td>
+                  </tr>
+                </table>
+                {% if post.website %}</a>{% else %}</div>{% endif %}
+        </div>
+        {% endif %}
+        {% endfor %}
+        {% endfor %}
         </div>
         <br>
 
@@ -516,49 +533,52 @@
           {% for cat in post.categories %}
           {% if cat == 'surveys' %}
           <div style="width:50%;padding:10px;box-sizing:border-box;">
-            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;">
-              <tr>
-                <td style="padding:2.5%;width:50%;vertical-align:middle;min-width:100px">
-                  <img src="{{post.image}}" alt="project image"
-                    style="width:{% if post.image_width %}{{post.image_width}}{% else %}100%{% endif %}; height:auto; max-width:{% if post.image_width %}{{post.image_width}}{% else %}100%{% endif %};" />
-                </td>
-                <td style="padding:2.5%;width:70%;vertical-align:middle">
-                  <h3{% if post.highlight %} class="highlighted-title" {% endif %}>{{post.title}}</h3>
-                    <br>
-                    {{post.authors}}
-                    <br>
-                    <em>{{post.venue}}</em>
-                    <br>
-                    {% if post.arxiv %}
-                    <a href="{{post.arxiv}}">arxiv</a> /
-                    {% endif %}
-                    {% if post.website %}
-                    <a href="{{post.website}}">website</a> /
-                    {% endif %}
-                    {% if post.paper %}
-                    <a href="{{post.paper}}">paper</a>
-                    {% endif %}
-                    {% if post.video %}
-                    / <a href="{{post.video}}">video</a>
-                    {% endif %}
-                    {% if post.code %}
-                    <a href="{{post.code}}">code</a> /
-                    {% endif %}
-                    {% if post.poster %}
-                    <a href="{{post.poster}}">poster</a> /
-                    {% endif %}
-                    {% if post.slides %}
-                    <a href="{{post.slides}}">slides</a> /
-                    {% endif %}
-                    <p></p>
-                    {{ post.excerpt }}
-                </td>
-              </tr>
-            </table>
-          </div>
-          {% endif %}
-          {% endfor %}
-          {% endfor %}
+            {% if post.website %}<a href="{{post.website}}" class="project-card">{% else %}<div class="project-card"
+                style="transform:none;background:transparent;">{% endif %}
+                <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;">
+                  <tr>
+                    <td style="padding:2.5%;width:50%;vertical-align:middle;min-width:100px">
+                      <img src="{{post.image}}" alt="project image"
+                        style="width:{% if post.image_width %}{{post.image_width}}{% else %}100%{% endif %}; height:auto; max-width:{% if post.image_width %}{{post.image_width}}{% else %}100%{% endif %};" />
+                    </td>
+                    <td style="padding:2.5%;width:70%;vertical-align:middle">
+                      <h3{% if post.highlight %} class="highlighted-title" {% endif %}>{{post.title}}</h3>
+                        <br>
+                        {{post.authors}}
+                        <br>
+                        <em>{{post.venue}}</em>
+                        <br>
+                        {% if post.arxiv %}
+                        <a href="{{post.arxiv}}">arxiv</a> /
+                        {% endif %}
+                        {% if post.website %}
+                        <a href="{{post.website}}">website</a> /
+                        {% endif %}
+                        {% if post.paper %}
+                        <a href="{{post.paper}}">paper</a>
+                        {% endif %}
+                        {% if post.video %}
+                        / <a href="{{post.video}}">video</a>
+                        {% endif %}
+                        {% if post.code %}
+                        <a href="{{post.code}}">code</a> /
+                        {% endif %}
+                        {% if post.poster %}
+                        <a href="{{post.poster}}">poster</a> /
+                        {% endif %}
+                        {% if post.slides %}
+                        <a href="{{post.slides}}">slides</a> /
+                        {% endif %}
+                        <p></p>
+                        {{ post.excerpt }}
+                    </td>
+                  </tr>
+                </table>
+                {% if post.website %}</a>{% else %}</div>{% endif %}
+        </div>
+        {% endif %}
+        {% endfor %}
+        {% endfor %}
         </div>
 
         <!-- COURSEWORK SECTION -->

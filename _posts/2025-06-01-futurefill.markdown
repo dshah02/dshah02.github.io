@@ -6,8 +6,9 @@ image: /images/futurefill_.png
 categories: research
 authors: "Naman Agarwal, Xinyi Chen, Evan Dogariu, <b>Devan Shah</b>, Hubert Strauss, Vladimir Feinberg, Daniel Suo, Peter Bartlett, Elad Hazan" 
 venue: ICLR 2026
+website: https://dshah.io/futurefill
 paper: https://arxiv.org/pdf/2410.03766
-code: https://github.com/dshah02/FF_FlashSTU
+code: https://github.com/dshah02/futurefill
 slides: /pdfs/stu_to_futurefill.pdf 
 # excerpt: We address the challenge of efficient auto-regressive generation in sequence prediction models by introducing FutureFill—a general-purpose fast generation method for any sequence prediction algorithm based on convolutional operators. FutureFill reduces generation time from quadratic to quasilinear in the context length. 
 ---
