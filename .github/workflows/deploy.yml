@@ -22,8 +22,10 @@ jobs:
           ruby-version: "3.2.2"
           bundler-cache: true
 
-      - name: Install Python dependencies
-        run: pip3 install --upgrade jupyter
+      - name: Install dependencies
+        run: |
+          pip3 install --upgrade jupyter
+          sudo apt-get update && sudo apt-get install -y imagemagick
 
       - name: Build
         run: |
