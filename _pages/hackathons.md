@@ -56,7 +56,7 @@ nav_order: 4
     <img class="hack-img" src="/assets/img/hackathons/columbia.png" alt="Columbia">
   </div>
   <div class="col-sm-8">
-    <div class="title"><b>#1/54</b> &mdash; <a href="https://columbia-devfest-2024.devpost.com">Columbia DevFest</a></div>
+    <div class="title"><b>#1/54</b> &mdash; <a href="https://devfest-24.devpost.com/">Columbia DevFest</a></div>
     <div class="author">2024 &nbsp;&middot;&nbsp; <a href="https://devpost.com/software/your-congress">Your Congress</a></div>
   </div>
 </div>
@@ -86,7 +86,7 @@ nav_order: 4
     <img class="hack-img" src="/assets/img/hackathons/harvard.png" alt="Harvard">
   </div>
   <div class="col-sm-8">
-    <div class="title"><b>#1/24</b> CareYaya track &mdash; <a href="https://hackharvard2023.devpost.com">HackHarvard</a></div>
+    <div class="title"><b>#1/24</b> CareYaya track &mdash; <a href="https://hackharvard-2023.devpost.com/">HackHarvard</a></div>
     <div class="author">2023 &nbsp;&middot;&nbsp; <a href="https://devpost.com/software/dreamscape-lprxcm">DreamScape</a></div>
   </div>
 </div>
@@ -106,7 +106,7 @@ nav_order: 4
     <img class="hack-img" src="/assets/img/hackathons/princeton.png" alt="Princeton">
   </div>
   <div class="col-sm-8">
-    <div class="title">Best AI Hack &mdash; <a href="https://hackprinceton-s2022.devpost.com">HackPrinceton</a></div>
+    <div class="title">Best AI Hack &mdash; <a href="https://hackprinceton-fall-2022.devpost.com">HackPrinceton</a></div>
     <div class="author">2022</div>
   </div>
 </div>
