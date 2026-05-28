@@ -7,16 +7,10 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
-  pages: write
-  id-token: write
-
-concurrency:
-  group: "pages"
-  cancel-in-progress: false
+  contents: write
 
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -28,35 +22,21 @@ jobs:
           ruby-version: "3.2.2"
           bundler-cache: true
 
-      - name: Setup Pages
-        id: pages
-        uses: actions/configure-pages@v5
-
       - name: Install Python dependencies
         run: pip3 install --upgrade jupyter
 
-      - name: Build with Jekyll
+      - name: Build
         run: |
           export JEKYLL_ENV=production
-          bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
+          bundle exec jekyll build
 
       - name: Purge unused CSS
         run: |
           npm install -g purgecss
           purgecss -c purgecss.config.js
 
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+      - name: Deploy to gh-pages
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
-          path: ./_site
-
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+          folder: _site
+          branch: gh-pages
